@@ -1,18 +1,20 @@
-﻿# Research Artifacts
+# Research Artifacts
 
-用于管理中国画意境多模态大语言模型评测项目的数据、代码、实验输出和论文结果。
+This repository contains the lightweight, shareable data and configuration package for the Chinese painting artistic-conception evaluation project. The current version is limited to curated evaluation data, task definitions, model configurations, experiment protocol metadata, and public-source records.
 
-## Project Areas
+## Repository Contents
 
-- `data`: 数据源、任务数据、标注和元数据
-- `prompts`: 不同实验条件下的提示词模板
-- `src`: 数据处理、推理、评测、归因和统计分析代码
-- `experiments`: 基线、对比、消融、可解释性和归因实验
-- `outputs`: 模型原始输出和中间产物
-- `results`: 指标、表格、图像、案例和实验报告
-- `configs`: 模型、数据集、提示词和实验配置
-- `docs`: 实验协议、方法说明、图表说明和决策记录
+- `data/curated/`: curated evaluation data, including the CII-Bench painting subset, balanced TCC-Bench data, and the L1-L4 artistic-conception evaluation files.
+- `data/curated/ideation-eval/`: task items, paired probes, L4 reference texts, expert annotation sheets, scoring templates, and field schemas.
+- `data/metadata/`: dataset catalog and provenance information.
+- `data/references/painting-form/`: PaintingForm source records, dataset identifiers, and original download pointers. The complete image archive is not included.
+- `configs/experiments/`: experiment protocol and evaluation-condition configuration.
+- `configs/models/`: local model settings, model registry, and service configuration templates.
+
+## Scope and Exclusions
+
+This repository does not currently include Python implementation code, model weights, raw model responses, experimental result figures, statistical result files, the complete PaintingForm image archive, or download caches. Large third-party data are referenced through their original source records and download links.
 
 ## Reproducibility
 
-所有实验应记录数据版本、模型版本、提示词、配置文件、运行时间和输出位置。
+Reproduction should use the versioned data files, field schemas, experiment protocol, and model configuration files in this repository. Record the dataset version, model version, prompt condition, inference parameters, and runtime environment for each run. External datasets should be obtained from the original sources recorded under `data/references/painting-form/` and used according to their applicable licenses.
