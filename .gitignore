@@ -1,0 +1,38 @@
+﻿# Generated files
+__pycache__/
+*.pyc
+
+# Local environments
+.venv/
+venv/
+
+# Model weights and large files
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Logs and caches
+*.log
+.cache/
+
+# Local outputs
+outputs/model-responses/
+
+# Dataset caches and raw archives
+.cache/
+*.zip
+*.parquet
+
+
+# Download staging files
+BIT*.tmp
+*.url
+
+
+configs/models/.env
+configs/models/.env.example
+
+# Keep the curated benchmark table tracked in this repository
+!data/curated/*.parquet

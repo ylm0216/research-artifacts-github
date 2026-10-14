@@ -1,0 +1,18 @@
+﻿{
+    "dataset":  "PaintingForm",
+    "source":  "https://github.com/steven640pixel/GalleryGPT",
+    "hub":  "https://huggingface.co/datasets/steven16/Painting-Form",
+    "train_rows":  224850,
+    "gemini_test_rows":  5000,
+    "gpt_test_rows":  5000,
+    "train_file":  "train_samples_tuning.json",
+    "image_archive_expected_bytes":  10052202127,
+    "train_samples_tuning.json_sha256":  "cd27fce7b79f56df31e4fd104db9e3125fe6516cc3fc19037028f7537be3b3af",
+    "formalanalysis_test_gemini.json_sha256":  "a06ce0c1bbc8f7df3818de7d2f1dd5adade4508bb198eb3fdfd4b315234c5db5",
+    "formalanalysis_test_gpt.json_sha256":  "fb99c6f0968a832ecec6e84591cb6d60ebbfc26dcd131124605538832ea9530c",
+    "image_archive_status":  "complete",
+    "image_archive_file":  "art-images-data.zip",
+    "extracted_image_root":  "images/art_images_data/images",
+    "referenced_unique_images":  13812,
+    "missing_referenced_images":  0
+}

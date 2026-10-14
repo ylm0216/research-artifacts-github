@@ -1,0 +1,6 @@
+﻿local_model:
+  id: Qwen/Qwen2-VL-2B-Instruct
+  quantization: 4bit
+  device: auto
+  max_new_tokens: 256
+  max_samples: 100

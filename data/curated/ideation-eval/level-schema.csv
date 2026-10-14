@@ -1,0 +1,5 @@
+﻿level,level_name,task_type,primary_metric,annotation_fields
+L1,Visual object recognition,closed_choice,accuracy,visible_elements
+L2,Symbolic interpretation,closed_choice,accuracy,symbolic_mapping
+L3,Artistic conception interpretation,closed_choice,accuracy,cultural_grounding
+L4,Artistic appreciation,open_generation,expert_score,interpretation_reference

@@ -1,0 +1,4 @@
+﻿probe_id,image_a,image_b,contrast_dimension,expected_direction,expert_rationale,split,status
+probe-001,,,blank-space ratio,,,pilot_template
+probe-002,,,subject matter,,,pilot_template
+probe-003,,,symbolic imagery,,,pilot_template

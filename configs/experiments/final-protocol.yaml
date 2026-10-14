@@ -1,0 +1,35 @@
+protocol_id: chinese-painting-ideation-final-pilot
+seed: 6473
+status: pilot_locked_pending_expert_annotation
+models:
+- Qwen2-VL-2B-Instruct
+conditions:
+- flat
+- generic
+- proposed
+datasets:
+  painting:
+    file: research-artifacts\data\curated\ideation-eval\final-items-pilot.csv
+    n: 125
+    source_sha256: a4c5983157e28a08d40c514cbcb22efaa975cfce96f2263d383ffc337c35c3e0
+  tcc_balanced:
+    file: research-artifacts\data\curated\ideation-eval\final-tcc-balanced.csv
+    n: 80
+    source_sha256: 42087ea92a7af10ff9cfd240866c5880afa5a1775fb670a9b01b362d907a0ca7
+levels:
+  L1: visual recognition
+  L2: symbolic interpretation
+  L3: artistic conception interpretation
+  L4: open generation
+metrics:
+- accuracy
+- paired_probe_accuracy
+- bootstrap_ci95
+- fleiss_kappa
+inference:
+  quantization: 4bit
+  max_new_tokens: 8
+  do_sample: false
+  local_files_only: true
+gating: Do not claim superiority before expert annotation, paired probes, and same-item
+  condition comparison are complete.
