@@ -11,10 +11,10 @@ This repository contains the lightweight, shareable data and configuration packa
 - `configs/experiments/`: experiment protocol and evaluation-condition configuration.
 - `configs/models/`: local model settings, model registry, and service configuration templates.
 
-## Scope and Exclusions
+## Data Sources
 
-This repository does not currently include Python implementation code, model weights, raw model responses, experimental result figures, statistical result files, the complete PaintingForm image archive, or download caches. Large third-party data are referenced through their original source records and download links.
+The curated files are organized for direct inspection and reuse in the evaluation workflow. Dataset identifiers, source URLs, and related provenance records are provided under `data/metadata/` and `data/references/painting-form/`.
 
-## Reproducibility
+## Usage
 
-Reproduction should use the versioned data files, field schemas, experiment protocol, and model configuration files in this repository. Record the dataset version, model version, prompt condition, inference parameters, and runtime environment for each run. External datasets should be obtained from the original sources recorded under `data/references/painting-form/` and used according to their applicable licenses.
+The task schemas, evaluation items, paired probes, reference texts, scoring templates, experiment protocol, and model configuration files should be used together to maintain consistent dataset and evaluation definitions.
